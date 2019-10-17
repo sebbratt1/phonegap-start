@@ -96,7 +96,7 @@ window.alert(value);
 key = "halfGalaxy";
 value = window.localStorage.getItem(key);
 parseValue = JSON.parse(value);
-$("#galaxyText").text(parseValue.energy);
+window.alert(parseValue.energy);
 
 window.alert(localStorage.length + " items stored in local storage");
 
