@@ -47,3 +47,34 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+
+// Local Storage - Storing
+
+var key = "orange";
+var value = "orange";
+window.localStorage.setItem(key, value);
+
+key = "phone";
+value = "bad";
+window.localStorage.setItem(key, value);
+
+key = "cable";
+value = "got";
+window.localStorage.setItem(key, value);
+
+key = "hello";
+value = "world";
+window.localStorage.setItem(key, value);
+
+key = "key";
+value = "12345";
+window.localStorage.setItem(key, value);
+
+// Local Storage - Getting
+
+key = "phone";
+value = window.localStorage.getItem(key);
+window.alert(value);
+
+
+
