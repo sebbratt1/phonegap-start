@@ -96,7 +96,7 @@ window.alert(value);
 key = "halfGalaxy";
 value = window.localStorage.getItem(key);
 parseValue = JSON.parse(value);
-window.alert(parseValue.energy);
+window.alert(parseValue.energy + parseValue.fat + parseValue.salt + parseValue.protein + parseValue.carb);
 
 window.alert(localStorage.length + " items stored in local storage");
 
