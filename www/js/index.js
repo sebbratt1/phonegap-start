@@ -50,8 +50,14 @@ var app = {
 
 // Local Storage - Storing
 
-var key = "orange";
-var value = "orange";
+var key;
+var value;
+var parseValue;
+var halfGalaxy;
+var halfGalaxyString;
+
+key = "orange";
+value = "orange";
 window.localStorage.setItem(key, value);
 
 key = "phone";
@@ -70,12 +76,31 @@ key = "key";
 value = "12345";
 window.localStorage.setItem(key, value);
 
+halfGalaxy = {
+	"energy": "2280kJ",
+	"fat": "32.4g",
+	"salt": "0.25g",
+	"protein": "6.7g",
+	"carb": "56.0g"
+}
+halfGalaxyString = JSON.stringify(halfGalaxy);
+key = "halfGalaxy";
+window.localStorage.setItem(key, halfGalaxyString);
+
 // Local Storage - Getting
 
 key = "phone";
 value = window.localStorage.getItem(key);
 window.alert(value);
+
+key = "halfGalaxy";
+value = window.localStorage.getItem(key);
+parseValue = JSON.parse(value);
+$("#galaxyText").text(parseValue.energy);
+
 window.alert(localStorage.length + " items stored in local storage");
+
+
 
 
 
