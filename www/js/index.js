@@ -75,6 +75,7 @@ window.localStorage.setItem(key, value);
 key = "phone";
 value = window.localStorage.getItem(key);
 window.alert(value);
+window.alert(localStorage.length + " items stored in local storage");
 
 
 
